@@ -8,28 +8,17 @@ function App() {
 
   return (
     <>
-
-      <div style={{ display: "flex" }}>
-
-        <div style={{ backgroundColor: "red" }}>
-          Hi from red
-
-        </div>
-
-        <div style={{ backgroundColor: "blue" }}>
-          Hi from blue
-
-        </div>
-
-        <div style={{ backgroundColor: "green" }}>
-
-          Hi from green
-        </div>
-
-
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ backgroundColor: "red" }}>Hi from red</div>
+        <div style={{ backgroundColor: "blue" }}> Hi from blue</div>
+        <div style={{ backgroundColor: "green" }}> Hi from green</div>
       </div>
 
-
+      <div className="flex bg-red-400 justify-between">
+        <div className='bg-red-600'>Hi from red</div>
+        <div className='bg-blue-500'> Hi from blue</div>
+        <div className='bg-green-500' > Hi from green</div>
+      </div>
     </>
   )
 }
