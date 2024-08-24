@@ -8,8 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#e02f39', // Custom primary color
-        secondary: '#4f2f39', // Custom secondary color
+        primary: '#012d4b', // Custom primary color
+        secondary: '#000111', // Custom secondary color
+        fontwhite:'#ffffff',
       },
       fontFamily: {
         custom: ['"Comic Sans MS"', 'cursive'], // Custom font family
