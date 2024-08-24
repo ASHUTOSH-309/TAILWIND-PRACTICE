@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
@@ -8,17 +7,25 @@ function App() {
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div style={{ backgroundColor: "red" }}>Hi from red</div>
-        <div style={{ backgroundColor: "blue" }}> Hi from blue</div>
-        <div style={{ backgroundColor: "green" }}> Hi from green</div>
+      <div className='grid grid-cols-1  md:grid-cols-3'> \
+        {/* on screens with width<768 it will be a single column grid
+          while on screens >= 768 px it will be a 3 column grid
+      
+      */}
+        <div className='bg-red-500 col-span-1'>hi</div>
+        <div className='bg-blue-500 col-span-1'>hi</div>
+        <div className='bg-yellow-500 col-span-1'>hi</div>
+        <div className='bg-red-500 col-span-1'>hi</div>
+        <div className='bg-blue-500 col-span-1'>hi</div>
+        <div className='bg-yellow-500 col-span-1'>hi</div>
+        <div className='bg-yellow-500 col-span-1'>hi</div>
       </div>
 
-      <div className="flex bg-red-400 justify-between">
-        <div className='bg-red-600'>Hi from red</div>
-        <div className='bg-blue-500'> Hi from blue</div>
-        <div className='bg-green-500' > Hi from green</div>
-      </div>
+   {/*    <div className='flex'>
+        <div className='bg-red-500 w-[40%]'>hi</div>
+        <div className='bg-yellow-500 w-[40%]' >hi</div>
+        <div className='bg-blue-500 w-[20%]'>hi</div>
+      </div> */}
     </>
   )
 }
